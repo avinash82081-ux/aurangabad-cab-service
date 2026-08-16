@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aurangabad Cab Service | Aurangabad to Pune & Mumbai Taxi</title>
+
+  <meta name="description" content="Aurangabad Cab Service - Premium taxi service from Aurangabad Airport to Pune, Mumbai and other destinations. Book your cab by call or WhatsApp.">
+  <meta name="keywords" content="Aurangabad Cab Service, Aurangabad Taxi, Aurangabad Airport Taxi, Aurangabad to Pune Taxi, Aurangabad to Mumbai Taxi">
+  <meta name="author" content="Aurangabad Cab Service">
+
+  <meta property="og:title" content="Aurangabad Cab Service">
+  <meta property="og:description" content="Premium Taxi Service from Aurangabad Airport to Pune, Mumbai and more.">
+  <meta property="og:type" content="website">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --black: #080808;
+      --dark: #111111;
+      --gold: #d4af37;
+      --light-gold: #f5d76e;
+      --white: #ffffff;
+      --gray: #b7b7b7;
+      --card: #171717;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* NAVBAR */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      background: rgba(5,5,5,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(212,175,55,0.2);
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      padding: 17px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--gold);
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      font-size: 14px;
+      color: #ddd;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .nav-call {
+      padding: 10px 17px;
+      border: 1px solid var(--gold);
+      border-radius: 30px;
+      color: var(--gold);
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+
+      background:
+        linear-gradient(90deg,
+        rgba(0,0,0,0.95) 0%,
+        rgba(0,0,0,0.72) 45%,
+        rgba(0,0,0,0.35) 100%),
+        url("https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=2000&q=85")
+        center/cover;
+    }
+
+    .hero-content {
+      width: 1200px;
+      max-width: 92%;
+      margin: auto;
+      padding-top: 70px;
+    }
+
+    .badge {
+      display: inline-block;
+      color: var(--gold);
+      border: 1px solid rgba(212,175,55,0.5);
+      padding: 7px 15px;
+      border-radius: 30px;
+      font-size: 12px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+      background: rgba(212,175,55,0.08);
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 82px);
+      line-height: 1;
+      max-width: 800px;
+      margin-bottom: 22px;
+      font-weight: 900;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      color: #ddd;
+      font-size: 18px;
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      padding: 14px 23px;
+      border-radius: 30px;
+      font-weight: bold;
+      display: inline-block;
+      transition: 0.3s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold), var(--light-gold));
+      color: #050505;
+    }
+
+    .btn-outline {
+      border: 1px solid #777;
+      color: white;
+      background: rgba(0,0,0,0.3);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    /* BOOKING */
+
+    .booking-section {
+      margin-top: -80px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .booking-card {
+      max-width: 1100px;
+      margin: auto;
+      background: rgba(20,20,20,0.97);
+      border: 1px solid rgba(212,175,55,0.35);
+      border-radius: 22px;
+      padding: 28px;
+      box-shadow: 0 20px 70px rgba(0,0,0,0.5);
+    }
+
+    .booking-title {
+      color: var(--gold);
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .input-box label {
+      display: block;
+      color: #aaa;
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 13px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      background: #0d0d0d;
+      color: white;
+      outline: none;
+    }
+
+    input:focus, select:focus {
+      border-color: var(--gold);
+    }
+
+    .booking-submit {
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    /* COMMON */
+
+    section {
+      padding: 100px 20px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-heading small {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(30px, 5vw, 48px);
+      margin-top: 8px;
+    }
+
+    .section-heading p {
+      color: var(--gray);
+      max-width: 650px;
+      margin: 12px auto;
+    }
+
+    /* SERVICES */
+
+    .services {
+      background: #0d0d0d;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      background: var(--card);
+      padding: 28px 20px;
+      border-radius: 18px;
+      border: 1px solid #242424;
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      border-color: var(--gold);
+    }
+
+    .service-icon {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    /* ROUTES */
+
+    .route-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .route-card {
+      padding: 25px;
+      background: linear-gradient(145deg,#181818,#0e0e0e);
+      border-radius: 18px;
+      border: 1px solid #2a2a2a;
+    }
+
+    .route-card h3 {
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    .route-card p {
+      color: #aaa;
+      margin-bottom: 18px;
+      font-size: 14px;
+    }
+
+    /* FLEET */
+
+    .fleet {
+      background: #0d0d0d;
+    }
+
+    .fleet-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .car-card {
+      background: #171717;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid #282828;
+      transition: 0.3s;
+    }
+
+    .car-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+    }
+
+    .car-info {
+      padding: 22px;
+    }
+
+    .car-info h3 {
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .car-info p {
+      color: #aaa;
+      margin-bottom: 18px;
+    }
+
+    /* WHY US */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 15px;
+    }
+
+    .why-card {
+      padding: 23px;
+      border: 1px solid #252525;
+      border-radius: 15px;
+      background: #111;
+    }
+
+    .why-card strong {
+      display: block;
+      color: var(--gold);
+      margin-bottom: 5px;
+    }
+
+    .why-card span {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    /* LOCATION */
+
+    .location-box {
+      background: linear-gradient(135deg,#191919,#0c0c0c);
+      border: 1px solid rgba(212,175,55,0.3);
+      border-radius: 22px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .location-box h2 {
+      margin-bottom: 10px;
+    }
+
+    .location-box p {
+      color: #aaa;
+      margin-bottom: 25px;
+    }
+
+    /* ABOUT */
+
+    .about {
+      background: #0d0d0d;
+    }
+
+    .about-content {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-content p {
+      color: #aaa;
+      font-size: 17px;
+      margin-bottom: 20px;
+    }
+
+    /* FAQ */
+
+    .faq {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    details {
+      background: #151515;
+      border: 1px solid #292929;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      padding: 18px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: white;
+    }
+
+    details p {
+      color: #aaa;
+      padding-top: 12px;
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .contact-card {
+      background: #151515;
+      padding: 35px;
+      border-radius: 20px;
+      border: 1px solid #282828;
+    }
+
+    .contact-card h3 {
+      color: var(--gold);
+      margin-bottom: 15px;
+    }
+
+    .contact-number {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #050505;
+      padding: 55px 20px 100px;
+      border-top: 1px solid #222;
+    }
+
+    .footer-grid {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    footer h3 {
+      color: var(--gold);
+      margin-bottom: 15px;
+    }
+
+    footer p, footer a {
+      color: #888;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    footer a:hover {
+      color: var(--gold);
+    }
+
+    .copyright {
+      max-width: 1150px;
+      margin: 35px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #222;
+      color: #666;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* FLOATING WHATSAPP */
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 85px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 27px;
+      z-index: 999;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    }
+
+    /* MOBILE BAR */
+
+    .mobile-bar {
+      display: none;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width: 900px) {
+
+      nav {
+        display: none;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .route-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .fleet-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media(max-width: 600px) {
+
+      .hero {
+        min-height: 90vh;
+      }
+
+      .hero-content {
+        padding-top: 80px;
+      }
+
+      .hero h1 {
+        font-size: 45px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .booking-section {
+        margin-top: -40px;
+        padding: 0 15px;
+      }
+
+      .booking-card {
+        padding: 20px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 75px 15px;
+      }
+
+      .service-grid,
+      .route-grid,
+      .fleet-grid,
+      .why-grid,
+      .contact-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .location-box {
+        padding: 28px 20px;
+      }
+
+      .mobile-bar {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: #090909;
+        border-top: 1px solid #333;
+      }
+
+      .mobile-bar a {
+        text-align: center;
+        padding: 13px 4px;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .mobile-call {
+        color: white;
+      }
+
+      .mobile-whatsapp {
+        color: #25D366;
+      }
+
+      .mobile-book {
+        background: var(--gold);
+        color: black;
+      }
+
+      .whatsapp {
+        bottom: 80px;
+        right: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+
+    <a href="#" class="logo">
+      AURANGABAD <span>CAB SERVICE</span>
+    </a>
+
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#routes">Routes</a>
+      <a href="#fleet">Fleet</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:+919028252599" class="nav-call">CALL NOW</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="badge">
+      PREMIUM CAB SERVICE • AURANGABAD AIRPORT
+    </div>
+
+    <h1>
+      Your Journey.<br>
+      <span>Our Priority.</span>
+    </h1>
+
+    <p>
+      Premium taxi service from Aurangabad Airport to Pune,
+      Mumbai and destinations across Maharashtra.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#booking" class="btn btn-gold">
+        BOOK A TAXI
+      </a>
+
+      <a href="tel:+919028252599" class="btn btn-outline">
+        📞 CALL NOW
+      </a>
+
+      <a
+        href="https://wa.me/919028252599?text=Hello%20Aurangabad%20Cab%20Service,%20I%20want%20to%20book%20a%20taxi.%20Please%20share%20availability%20and%20fare."
+        class="btn btn-outline"
+        target="_blank">
+        💬 WHATSAPP
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- BOOKING -->
+
+<div class="booking-section" id="booking">
+
+  <div class="booking-card">
+
+    <h2 class="booking-title">
+      🚕 Book Your Premium Cab
+    </h2>
+
+    <div class="form-grid">
+
+      <div class="input-box">
+        <label>Pickup Location</label>
+        <input id="pickup" type="text"
+          value="Aurangabad Airport"
+          placeholder="Pickup location">
+      </div>
+
+      <div class="input-box">
+        <label>Drop Location</label>
+        <input id="drop" type="text"
+          placeholder="Where are you going?">
+      </div>
+
+      <div class="input-box">
+        <label>Travel Date</label>
+        <input id="date" type="date">
+      </div>
+
+      <div class="input-box">
+        <label>Pickup Time</label>
+        <input id="time" type="time">
+      </div>
+
+      <div class="input-box">
+        <label>Trip Type</label>
+
+        <select id="trip">
+          <option>One Way</option>
+          <option>Round Trip</option>
+        </select>
+
+      </div>
+
+      <div class="input-box">
+
+        <label>Vehicle</label>
+
+        <select id="vehicle">
+          <option>Toyota Innova</option>
+          <option>Toyota Innova Crysta</option>
+          <option>Maruti Ertiga</option>
+          <option>Premium Sedan</option>
+        </select>
+
+      </div>
+
+    </div>
+
+    <button class="btn btn-gold booking-submit"
+      onclick="sendBooking()">
+
+      GET INSTANT QUOTE ON WHATSAPP
+
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <small>OUR SERVICES</small>
+
+      <h2>Travel With Comfort</h2>
+
+      <p>
+        Reliable taxi solutions for local and outstation journeys.
+      </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <div class="service-icon">🚕</div>
+        <h3>Local Taxi</h3>
+        <p>Comfortable taxi service for local travel.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🛣️</div>
+        <h3>Outstation</h3>
+        <p>Travel comfortably across Maharashtra.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔄</div>
+        <h3>One Way</h3>
+        <p>Convenient one-way taxi bookings.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔁</div>
+        <h3>Round Trip</h3>
+        <p>Plan your return journey with ease.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">✈️</div>
+        <h3>Airport Transfer</h3>
+        <p>Pickup and drop from Aurangabad Airport.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🚆</div>
+        <h3>Railway Transfer</h3>
+        <p>Station pickup and drop service.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🏢</div>
+        <h3>Corporate Travel</h3>
+        <p>Professional transportation for businesses.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">⭐</div>
+        <h3>Premium Cab</h3>
+        <p>Comfortable cars for premium journeys.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ROUTES -->
+
+<section id="routes">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <small>POPULAR ROUTES</small>
+
+      <h2>Where We Take You</h2>
+
+      <p>
+        Book comfortable cabs from Aurangabad to major cities.
+      </p>
+
+    </div>
+
+
+    <div class="route-grid">
+
+      <div class="route-card">
+        <h3>Aurangabad → Pune</h3>
+        <p>
+          Comfortable outstation taxi service from Aurangabad to Pune.
+        </p>
+
+        <a href="#booking" class="btn btn-outline">
+          BOOK ROUTE
+        </a>
+      </div>
+
+
+      <div class="route-card">
+        <h3>Aurangabad → Mumbai</h3>
+        <p>
+          Reliable taxi service from Aurangabad to Mumbai.
+        </p>
+
+        <a href="#booking" class="btn btn-outline">
+          BOOK ROUTE
+        </a>
+      </div>
+
+
+      <div class="route-card">
+        <h3>Aurangabad Airport</h3>
+        <p>
+          Airport pickup and drop service available.
+        </p>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Aurangabad+Airport"
+          target="_blank"
+          class="btn btn-outline">
+          VIEW MAP
+        </a>
+      </div>
+
+
+      <div class="route-card">
+        <h3>Pune → Aurangabad</h3>
+        <p>
+          Comfortable return journey taxi service.
+        </p>
+
+        <a href="#booking" class="btn btn-outline">
+          BOOK ROUTE
+        </a>
+      </div>
+
+
+      <div class="route-card">
+        <h3>Mumbai → Aurangabad</h3>
+        <p>
+          Premium outstation taxi service.
+        </p>
+
+        <a href="#booking" class="btn btn-outline">
+          BOOK ROUTE
+        </a>
+      </div>
+
+
+      <div class="route-card">
+        <h3>Airport Transfer</h3>
+        <p>
+          Pre-book your airport pickup or drop.
+        </p>
+
+        <a href="#booking" class="btn btn-outline">
+          BOOK NOW
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FLEET -->
+
+<section class="fleet" id="fleet">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <small>OUR FLEET</small>
+
+      <h2>Choose Your Comfort</h2>
+
+      <p>
+        Comfortable and spacious vehicles for your journey.
+      </p>
+
+    </div>
+
+
+    <div class="fleet-grid">
+
+      <div class="car-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=1000&q=85"
+          alt="Premium taxi">
+
+        <div class="car-info">
+
+          <h3>Toyota Innova</h3>
+
+          <p>
+            Comfortable • AC • Family Friendly
+          </p>
+
+          <a href="#booking" class="btn btn-gold">
+            BOOK NOW
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="car-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85"
+          alt="Premium car">
+
+        <div class="car-info">
+
+          <h3>Toyota Innova Crysta</h3>
+
+          <p>
+            Premium • Spacious • AC
+          </p>
+
+          <a href="#booking" class="btn btn-gold">
+            BOOK NOW
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="car-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1000&q=85"
+          alt="Sedan taxi">
+
+        <div class="car-info">
+
+          <h3>Premium Sedan</h3>
+
+          <p>
+            Comfortable • AC • Professional
+          </p>
+
+          <a href="#booking" class="btn btn-gold">
+            BOOK NOW
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHY US -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <small>WHY CHOOSE US</small>
+
+      <h2>Travel With Confidence</h2>
+
+    </div>
+
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <strong>✓ Professional Drivers</strong>
+        <span>Experienced and courteous drivers.</span>
+      </div>
+
+      <div class="why-card">
+        <strong>✓ Clean Cars</strong>
+        <span>Comfortable and well-maintained vehicles.</span>
+      </div>
+
+      <div class="why-card">
+        <strong>✓ AC Vehicles</strong>
+        <span>Comfortable travel in every season.</span>
+      </div>
+
+      <div class="why-card">
+        <strong>✓ Easy Booking</strong>
+        <span>Book easily through Call or WhatsApp.</span>
+      </div>
+
+      <div class="why-card">
+        <strong>✓ Airport Pickup</strong>
+        <span>Convenient Aurangabad Airport transfers.</span>
+      </div>
+
+      <div class="why-card">
+        <strong>✓ Outstation</strong>
+        <span>Long-distance taxi services available.</span>
+      </div>
+
+      <div class="why-card">
+        <strong>✓ Transparent Fare</strong>
+        <span>Ask for your fare before booking.</span>
+      </div>
+
+      <div class="why-card">
+        <strong>✓ Customer Support</strong>
+        <span>Call or WhatsApp for booking assistance.</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- LOCATION -->
+
+<section class="services">
+
+  <div class="container">
+
+    <div class="location-box">
+
+      <h2>📍 Aurangabad Airport</h2>
+
+      <p>
+        Our primary pickup location is Aurangabad Airport.
+        Book your airport pickup or drop today.
+      </p>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Aurangabad+Airport"
+        target="_blank"
+        class="btn btn-gold">
+
+        OPEN GOOGLE MAPS
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <small>ABOUT US</small>
+
+      <h2>Reliable Taxi Service For Every Journey</h2>
+
+    </div>
+
+
+    <div class="about-content">
+
+      <p>
+        <strong>Aurangabad Cab Service</strong> provides
+        convenient local and outstation taxi services from
+        Aurangabad Airport to Pune, Mumbai and other destinations.
+      </p>
+
+      <p>
+        Whether you are travelling for business, family,
+        airport transfer or a long-distance journey,
+        our goal is to make your travel comfortable and convenient.
+      </p>
+
+      <a href="#booking" class="btn btn-gold">
+        BOOK YOUR CAB
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <small>FAQ</small>
+
+      <h2>Frequently Asked Questions</h2>
+
+    </div>
+
+
+    <div class="faq">
+
+      <details>
+        <summary>How can I book a taxi?</summary>
+        <p>
+          You can book through the website, call
+          +91 9028252599 or WhatsApp us.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>Do you provide one-way taxi service?</summary>
+        <p>
+          Yes. One-way outstation taxi bookings can be requested.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>Do you provide airport pickup?</summary>
+        <p>
+          Yes. Aurangabad Airport pickup and drop service is available.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>Which vehicles are available?</summary>
+        <p>
+          Vehicle availability may include Innova, Innova Crysta,
+          Ertiga and premium sedan options.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>How can I get the fare?</summary>
+        <p>
+          Send your pickup and destination details on WhatsApp
+          and ask for the current fare.
+        </p>
+      </details>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <small>CONTACT US</small>
+
+      <h2>Ready For Your Journey?</h2>
+
+      <p>
+        Call or WhatsApp us to check availability and fare.
+      </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+
+        <h3>📞 Call Us</h3>
+
+        <div class="contact-number">
+          +91 9028252599
+        </div>
+
+        <a
+          href="tel:+919028252599"
+          class="btn btn-gold">
+
+          CALL NOW
+
+        </a>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <h3>💬 WhatsApp</h3>
+
+        <div class="contact-number">
+          +91 9028252599
+        </div>
+
+        <a
+          href="https://wa.me/919028252599"
+          target="_blank"
+          class="btn btn-gold">
+
+          CHAT ON WHATSAPP
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+
+      <h3>AURANGABAD CAB SERVICE</h3>
+
+      <p>
+        Premium taxi service from Aurangabad Airport
+        to Pune, Mumbai and other destinations.
+      </p>
+
+      <p>
+        📞 +91 9028252599
+      </p>
+
+      <p>
+        📍 Aurangabad Airport
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <h3>QUICK LINKS</h3>
+
+      <a href="#services">Services</a>
+      <a href="#routes">Routes</a>
+      <a href="#fleet">Fleet</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+
+    </div>
+
+
+    <div>
+
+      <h3>BOOKING</h3>
+
+      <a href="tel:+919028252599">
+        Call Now
+      </a>
+
+      <a
+        href="https://wa.me/919028252599"
+        target="_blank">
+
+        WhatsApp
+
+      </a>
+
+      <a href="#booking">
+        Book a Taxi
+      </a>
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Aurangabad+Airport"
+        target="_blank">
+
+        Google Maps
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="copyright">
+
+    © 2026 Aurangabad Cab Service. All Rights Reserved.
+
+  </div>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+  class="whatsapp"
+  href="https://wa.me/919028252599"
+  target="_blank"
+  aria-label="WhatsApp">
+
+  💬
+
+</a>
+
+
+<!-- MOBILE BOTTOM BAR -->
+
+<div class="mobile-bar">
+
+  <a
+    class="mobile-call"
+    href="tel:+919028252599">
+
+    📞 CALL
+
+  </a>
+
+  <a
+    class="mobile-whatsapp"
+    href="https://wa.me/919028252599"
+    target="_blank">
+
+    💬 WHATSAPP
+
+  </a>
+
+  <a
+    class="mobile-book"
+    href="#booking">
+
+    🚕 BOOK NOW
+
+  </a>
+
+</div>
+
+
+<script>
+
+function sendBooking() {
+
+  const pickup =
+    document.getElementById("pickup").value;
+
+  const drop =
+    document.getElementById("drop").value;
+
+  const date =
+    document.getElementById("date").value;
+
+  const time =
+    document.getElementById("time").value;
+
+  const trip =
+    document.getElementById("trip").value;
+
+  const vehicle =
+    document.getElementById("vehicle").value;
+
+
+  if (!drop) {
+
+    alert("Please enter your drop location.");
+
+    return;
+
+  }
+
+
+  const message =
+`Hello Aurangabad Cab Service 👋
+
+I want to book a taxi.
+
+📍 Pickup: ${pickup}
+📍 Drop: ${drop}
+📅 Date: ${date || "Not specified"}
+⏰ Time: ${time || "Not specified"}
+🔄 Trip: ${trip}
+🚕 Vehicle: ${vehicle}
+
+Please share availability and fare.
+
+Thank you.`;
+
+f
+  const whatsappURL =
+    "https://wa.me/919028252599?text="
+    + encodeURIComponent(message);
+
+
+  window.open(whatsappURL, "_blank");
+
+}
+
+</script>
+
+</body>
+</html>
