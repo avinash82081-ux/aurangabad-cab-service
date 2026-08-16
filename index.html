@@ -1556,7 +1556,41 @@ f
 
 }
 
-</script>
+<script>
+function sendBooking() {
 
-</body>
-</html>
+  const pickup = document.getElementById("pickup").value;
+  const drop = document.getElementById("drop").value;
+  const date = document.getElementById("date").value;
+  const time = document.getElementById("time").value;
+  const trip = document.getElementById("trip").value;
+  const vehicle = document.getElementById("vehicle").value;
+
+  if (!drop) {
+    alert("Please enter your drop location.");
+    return;
+  }
+
+  const message =
+`Hello Aurangabad Cab Service 👋
+
+I want to book a taxi.
+
+📍 Pickup: ${pickup}
+📍 Drop: ${drop}
+📅 Date: ${date || "Not specified"}
+⏰ Time: ${time || "Not specified"}
+🔄 Trip: ${trip}
+🚕 Vehicle: ${vehicle}
+
+Please share availability and fare.
+
+Thank you.`;
+
+  const whatsappURL =
+    "https://wa.me/919028252599?text=" +
+    encodeURIComponent(message);
+
+  window.open(whatsappURL, "_blank");
+}
+</script>
